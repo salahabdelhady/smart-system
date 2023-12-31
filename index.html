@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap-icon.main.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Smart System</title>
+</head>
+
+<body >
+    
+    <div class="text-center d-flex vh-100" id="main">
+        <div class="w-50 mx-auto mt-5 widthControl">
+            <h1 class="mainColor">Smart Login system</h1>
+        <!-- sign in form -->
+            <div id="signInForm" class="form p-4 rounded-4 mt-5">
+                <div class="position-relative w-75 mx-auto mt-5">
+                    <div class="d-flex Icon"><i class="fa-solid fa-envelope text-white m-auto fa-xl"></i></div>
+                    <input type="email" class="form-control input w-100 ps-5 rounded-5" placeholder="Your Email" id="signInEmail">
+                </div>
+
+                <div class="position-relative w-75 mx-auto mt-5 mb-3">
+                    <div class="d-flex Icon"><i class="fa-solid fa-unlock text-white m-auto fa-xl"></i></div>
+                    <input type="password" class="form-control input w-100 ps-5 rounded-5" placeholder="Your Passward" id="signInPass">
+                </div>
+
+                <p id="hintSignIn" class="text-white bg-danger w-75 rounded-4 m-auto my-4"></p>
+                
+                <p class="text-white">Don't have an account? <a href="#" class="text-decoration-none text-white" id="goSignUp">Sign Up</a></p>
+                
+                <button type="submit" class="py-2 my-1 w-25 mx-auto rounded-5 border-0 text-white" id="signIn"> Login </button>
+            </div>
+        <!-- sign Up form -->
+            <div id="signUpForm" class=" form d-none p-4 rounded-4 mt-5 position-relative">
+                <div class="position-relative w-75 mx-auto mt-5">
+                    <div class="d-flex Icon"><i class="fa-solid fa-user text-white m-auto fa-xl"></i></div>
+                    <input type="text" class="form-control input w-100 ps-5 rounded-5" placeholder="Enter Name" id="signUpName">
+                </div>
+                <div class="position-relative w-75 mx-auto mt-5">
+                    <div class="d-flex Icon"><i class="fa-solid fa-envelope text-white m-auto fa-xl"></i></div>
+                    <input type="email" class="form-control input w-100 ps-5 rounded-5" placeholder="Enter Email" id="signUpEmail">
+                </div>
+                <div class="position-relative w-75 mx-auto mt-5 mb-3">
+                    <div class="d-flex Icon"><i class="fa-solid fa-lock text-white m-auto fa-xl"></i></div>
+                    <input type="password" class="form-control input w-100 ps-5 rounded-5" placeholder="Enter password" id="signUpPass">
+                </div>
+                <p id="hintSignUp" class="text-white w-75 rounded-4 m-auto my-4"></p>
+                <p class="text-white">Don't have an account? <a href="#" class="text-decoration-none text-white" id="goSignIn">Signin</a></p>
+                <button type="submit" class="py-2 my-3 w-25 mx-auto rounded-5 border-0 text-white" id="signUp"> Sign UP </button>
+                <a href="#" class="text-decoration-none text-white" id="rules">need help?</a>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modal">
+                    Launch demo modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content bg-burlywood p-3">
+                        <div class="modal-header border-0">
+                            <h4><i class="fa-solid fa-pen-ruler fa-lg" style="color: #a6332b;"></i> Please follow the below rules</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-start px-5">
+                            <h5> <i class="fa-regular fa-circle-right color2"></i> Name:</h5>
+                            <p class="mt-3 ps-4" > Enter at least 3 characters only letters, numbers and underscores are allowed. Special characters and spaces are not allowed</p>
+                            <h5> <i class="fa-regular fa-circle-right color2"></i> Email:</h5>
+                            <p class="mt-3 ps-4" > Should include a username followed by the @ symbol, a domain name, a dot, and a valid top-level domain</p>
+                            <h5> <i class="fa-regular fa-circle-right color2"></i> Password:</h5>
+                            <p class="mt-3 ps-4" > Password must include at least 8 characters, with a mix of uppercase and lowercase letters, numbers, and at least one special character (@, $, !, %, *, ?, &). Avoid using easily guessable information like names or common words to enhance security.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- User Profile -->
+    <div id="profile" class="d-none ">
+        <nav class="navbar position-fixed w-100">
+            <div class="w-75 m-auto d-flex">
+                    <a class="navbar-brand fw-bolder fs-2 mainColor" href="#">SMART LOGIN</a>
+                    <a href="#" id="signOut" class="ms-auto text-decoration-none my-auto mainColor"><i class="fa-solid fa-door-closed fa-2xl" id="fa-door-closed"></i><i class="fa-solid fa-door-open fa-2xl d-none" id="fa-door-open"></i></a>
+            </div>
+        </nav>
+        <div class="vh-100 d-flex">
+            <h2 id="profileName" class="mainColor m-auto text-capitalize"></h2>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+</body>
+</html>
